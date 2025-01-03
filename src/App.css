@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('./Fonts/glacial-indifference.regular.otf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT Interphases Mono';
+    src: url('./Fonts/TT\ Interphases\ Pro\ Mono\ Trial\ Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT Interphases';
+    src: url('./Fonts/TT\ Interphases\ Pro\ Trial\ Light.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'Glacial Indifference', sans-serif;
+  }
