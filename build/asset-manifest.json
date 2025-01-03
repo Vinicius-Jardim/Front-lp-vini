@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a48570b.css",
+    "main.js": "/static/js/main.aa917556.js",
+    "static/js/453.f01b1e25.chunk.js": "/static/js/453.f01b1e25.chunk.js",
+    "static/media/TT Interphases Pro Trial Light.ttf": "/static/media/TT Interphases Pro Trial Light.c785646f5652f9d601cc.ttf",
+    "static/media/TT Interphases Pro Mono Trial Regular.ttf": "/static/media/TT Interphases Pro Mono Trial Regular.4b89374b4d03f61289ba.ttf",
+    "static/media/glacial-indifference.regular.otf": "/static/media/glacial-indifference.regular.884dc679b35db5f785f2.otf",
+    "index.html": "/index.html",
+    "main.4a48570b.css.map": "/static/css/main.4a48570b.css.map",
+    "main.aa917556.js.map": "/static/js/main.aa917556.js.map",
+    "453.f01b1e25.chunk.js.map": "/static/js/453.f01b1e25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a48570b.css",
+    "static/js/main.aa917556.js"
+  ]
+}

@@ -4,4 +4,5 @@ const config = {
     JWT_SECRET: process.env.REACT_APP_JWT_SECRET || 'your-secret-key'
 };
 
+
 export default config;

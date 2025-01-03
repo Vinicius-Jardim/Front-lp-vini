@@ -1,0 +1,33 @@
+{
+  "short_name": "DRE",
+  "name": "Delight Real Estate",
+  "description": "A sua imobiliária de confiança",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#f4f5f5",
+  "background_color": "#ffffff",
+  "prefer_related_applications": false,
+  "categories": ["business", "real estate", "lifestyle"],
+  "lang": "pt-PT"
+}
