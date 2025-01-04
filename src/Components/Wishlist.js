@@ -3,6 +3,7 @@ import api from "../api";
 import { useAuth } from "../Context/AuthContext";
 import { Link } from "react-router-dom";
 import { FaTrash, FaBed, FaCar, FaBath, FaRulerCombined } from "react-icons/fa";
+import config from "../Config/Config";
 
 const Wishlist = () => {
   const { authData } = useAuth();
@@ -97,7 +98,7 @@ const Wishlist = () => {
                         src={
                           item.propertyDetails?.fotos &&
                           item.propertyDetails.fotos.length > 0
-                            ? `http://localhost:5000/${item.propertyDetails.fotos[0]}`
+                            ? `${config.API_URL}/${item.propertyDetails.fotos[0]}`
                             : "https://via.placeholder.com/400x300?text=No+Image+Available"
                         }
                         alt={item.propertyDetails?.street || "Property"}

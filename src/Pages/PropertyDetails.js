@@ -17,7 +17,7 @@ import { useAuth } from "../Context/AuthContext";
 const PropertyDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { authData } = useAuth();
   const [property, setProperty] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -323,22 +323,20 @@ const PropertyDetails = () => {
               <h2 className="text-2xl font-bold">
                 {property.street} {property.doorNumber} | {property.city}
               </h2>
-             
+
+              {authData.role === 'client' && (
                 <button
                   onClick={handleWishlist}
                   disabled={addingToWishlist}
-                  className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                    isInWishlist
-                      ? "bg-[#585959] text-[#f4f5f5]"
-                      : "bg-[#f4f5f5] text-[#585959] border-2 border-[#585959] hover:bg-gray-300"
-                  }`}
-                  title={
-                    isInWishlist ? "Remove from Wishlist" : "Add to Wishlist"
-                  }
+                  className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors z-10"
                 >
-                  {isInWishlist ? <FaCheck size={12} /> : <FaPlus size={12} />}
+                  {isInWishlist ? (
+                    <FaCheck className="text-green-500" />
+                  ) : (
+                    <FaPlus className="text-gray-600" />
+                  )}
                 </button>
-              
+              )}
             </div>
 
             {showNoteModal && (
