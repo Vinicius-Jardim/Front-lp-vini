@@ -328,13 +328,13 @@ const PropertyDetails = () => {
                 <button
                   onClick={handleWishlist}
                   disabled={addingToWishlist}
-                  className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors z-10"
+                  className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    isInWishlist
+                      ? "bg-[#585959] text-[#f4f5f5]"
+                      : "bg-[#f4f5f5] text-[#585959] border-2 border-[#585959] hover:bg-gray-300"
+                  }`}
                 >
-                  {isInWishlist ? (
-                    <FaCheck className="text-green-500" />
-                  ) : (
-                    <FaPlus className="text-gray-600" />
-                  )}
+                  {isInWishlist ? <FaCheck size={12} /> : <FaPlus size={12} />}
                 </button>
               )}
             </div>
