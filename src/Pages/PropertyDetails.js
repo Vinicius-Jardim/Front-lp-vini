@@ -323,7 +323,7 @@ const PropertyDetails = () => {
               <h2 className="text-2xl font-bold">
                 {property.street} {property.doorNumber} | {property.city}
               </h2>
-              {user?.role === "client" && ( // Verifica se o usuário é um cliente antes de mostrar o botão
+             
                 <button
                   onClick={handleWishlist}
                   disabled={addingToWishlist}
@@ -338,7 +338,7 @@ const PropertyDetails = () => {
                 >
                   {isInWishlist ? <FaCheck size={12} /> : <FaPlus size={12} />}
                 </button>
-              )}
+              
             </div>
 
             {showNoteModal && (
